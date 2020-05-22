@@ -1,0 +1,25 @@
+input, button, select {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+input, select {
+    display: block;
+}
+
+label {
+    color: red;
+    margin-right: 3em;
+    margin-bottom: 40px;
+}
+
+.container {
+
+    width:50%;
+    margin:auto;
+    text-align: left;
+    
+}
+
+
+
