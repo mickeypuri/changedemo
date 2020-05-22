@@ -15,14 +15,13 @@ function Calculator() {
     useEffect(() => {
         if (!amount || !price || !currencyKey) {
             setChange({});
+        } else {
+            const change = calculateChange(Currencies[currencyKey], amount, price);
+            setChange(change);
         }
     }, [amount, price, currencyKey])
 
     const onChange = handler => e => handler(e.target.value);
-    const calculate = () => {
-        const change = calculateChange(Currencies[currencyKey], amount, price);
-        setChange(change);
-    };
 
     return (
         <>
@@ -48,11 +47,13 @@ function Calculator() {
                         <label htmlFor="price">Product Price</label>
                         <input id="price" name="price" value={price} onChange={onChange(setPrice)}></input>
                     </div>
-                    <button onClick={ calculate }>Calculate Change</button>
                 <div>
                     <label htmlFor="change">Your Change</label>
                     <span id="change">
-                        {(change?.supported === false) && "Sorry but this currency is not yet supported"}
+                        {(change?.supported === false) && (
+                            <div>
+                                Sorry but this currency is not yet supported
+                            </div>)}
                     
                          <ChangeHeader currencyKey={currencyKey} amount={amount} price={price} />
                          <ChangeDetails changeAmounts={change.changeAmounts} />

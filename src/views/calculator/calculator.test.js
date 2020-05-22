@@ -6,11 +6,10 @@ import Calculator from './calculator';
  * getByLabelText and getByText will throw an error if not found
  */
 test('ensure form has the required input elements', () => {
-    const { getByLabelText, getByText, debug } = render (<Calculator />);
+    const { getByLabelText } = render (<Calculator />);
     getByLabelText(/currency/i);
     getByLabelText(/presented/i);
     getByLabelText(/price/i);
-    getByText(/calculate change/i);
     getByLabelText(/change/i);
 });
 
