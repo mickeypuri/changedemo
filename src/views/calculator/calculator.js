@@ -55,7 +55,7 @@ function Calculator() {
                         {(change?.supported === false) && "Sorry but this currency is not yet supported"}
                     
                          <ChangeHeader currencyKey={currencyKey} amount={amount} price={price} />
-                         <ChangeDetails changeAmounts={change.change} />
+                         <ChangeDetails changeAmounts={change.changeAmounts} />
                          <ChangeFooter currencyKey={currencyKey} totalChange={change.totalChange}  />
                     </span>
                     

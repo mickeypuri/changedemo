@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ChangeDetails ({changeAmounts}) {
+function ChangeDetails ({ changeAmounts }) {
     if (!changeAmounts ) {
         return null;
     }

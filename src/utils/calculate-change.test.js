@@ -17,7 +17,7 @@ test('calling with GBP returns the correct result', () => {
     const expectedResult = {
         supported: true,
         totalChange: 150.79,
-        change: [
+        changeAmounts: [
             new ChangeAmount(denoms.gbpFiftyPound, 3),
             new ChangeAmount(denoms.gbpFiftyPence, 1),
             new ChangeAmount(denoms.gbpTwentyPence, 1),
