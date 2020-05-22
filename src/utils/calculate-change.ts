@@ -27,7 +27,7 @@ const calculateChange = (currency: Currency, amount: Number, price: Number) => {
 
     return {
         supported: true,
-        totalChange,
+        totalChange: totalChange.toFixed(2),
         changeAmounts: changeDenoms.denoms
     }
 };

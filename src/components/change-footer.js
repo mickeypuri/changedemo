@@ -8,7 +8,7 @@ function ChangeFooter ({currencyKey, totalChange}) {
 
     return (
         <div>
-            {`Total change: ${currencies[currencyKey].symbol}${totalChange.toFixed(2)}`}
+            {`Total change: ${currencies[currencyKey].symbol}${totalChange}`}
         </div>
     )
 }
