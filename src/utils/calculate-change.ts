@@ -25,7 +25,6 @@ const calculateChange = (currency: Currency, amount: Number, price: Number) => {
         return interim;
     }, initial);
 
-
     return {
         supported: true,
         totalChange,
