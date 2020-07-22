@@ -11,7 +11,7 @@ test ('app renders and displays the intro page', () => {
             <AppRoute/>
         </Router>
     );
-    expect(getByRole('heading')).toHaveTextContent(/tunstall test/i);
+    expect(getByRole('heading')).toHaveTextContent(/change calculator demo test/i);
 });
 
 test ('app can navigate to the calculator page', () => {

@@ -1,4 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A change calculator is required that handles GBP, EUR and USD currencies. We need to take as inputs a presented amount and a product price and the change returned must be calculated in the most efficient manner, i.e. by highest to lowest denominator.
+
+Given a presented amount of £200 and a product price of £49.21; the primary output should look like the following:
+
+“You supplied £200, with a product price of £49.21.
+
+This is your change:
+
+3 x £50
+
+1 x 50p
+
+1 x 20p
+
+1 x 5p
+
+2 x 2p
+
+Total change: £150.79”
 
 ## Available Scripts
 
